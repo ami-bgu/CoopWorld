@@ -1,0 +1,6 @@
+# Unity .gitignore file.
+.DS_Store
+Library
+Library/*
+Temp
+Build
