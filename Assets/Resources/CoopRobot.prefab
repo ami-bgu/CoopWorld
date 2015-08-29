@@ -15,6 +15,7 @@ GameObject:
   - 114: {fileID: 11438540}
   - 114: {fileID: 11461750}
   - 61: {fileID: 6183286}
+  - 114: {fileID: 11420856}
   m_Layer: 0
   m_Name: CoopRobot
   m_TagString: Player
@@ -149,6 +150,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11420856
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63b3bbd1626c65a4b975a2c9f52d1b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnEffect: {fileID: 135060, guid: 527359f91c3663448812b3ae6e649b9e, type: 2}
 --- !u!114 &11438540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -210,7 +223,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: SpawnEffect
+      value: 
+      objectReference: {fileID: 135060, guid: 527359f91c3663448812b3ae6e649b9e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 112032}
